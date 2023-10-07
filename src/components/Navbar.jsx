@@ -1,7 +1,9 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Grid, Link } from '@mui/material';
+import { AppBar, Toolbar, Typography, Grid, Link, IconButton } from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4'; // Moon icon
+import Brightness7Icon from '@mui/icons-material/Brightness7'; // Sun icon
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, themeMode }) => {
     return (
         <AppBar position="static">
             <Toolbar>
@@ -21,9 +23,12 @@ const Navbar = () => {
                         <Link href="/projects" color="inherit" style={{ marginRight: '20px' }}>
                             Projects
                         </Link>
-                        <Link href="/contact" color="inherit">
+                        <Link href="/contact" color="inherit" style={{ marginRight: '20px' }}>
                             Contact
                         </Link>
+                        <IconButton onClick={toggleTheme} color="inherit">
+                            {themeMode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+                        </IconButton>
                     </Grid>
                 </Grid>
             </Toolbar>
