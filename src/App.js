@@ -1,12 +1,11 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from '@mui/material/styles'; // Import ThemeProvider
 import { darkTheme, lightTheme } from './theme'; // Import your custom dark theme
 
-import AppRoutes from './Routes';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 function App() {
     const storedThemeMode = localStorage.getItem('themeMode') || 'dark';
@@ -24,14 +23,10 @@ function App() {
     return (
       <ThemeProvider theme={themeMode === 'dark' ? darkTheme : lightTheme}>
           <CssBaseline />
-          <Router>
           <div className="App">
               <Navbar toggleTheme={toggleTheme} themeMode={themeMode}/>
-              <main>
-                  <AppRoutes />
-              </main>
+              <Home />
           </div>
-          </Router>
       </ThemeProvider>
   );
 }

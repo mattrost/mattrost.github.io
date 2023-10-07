@@ -1,12 +1,27 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Grid, Link, IconButton } from '@mui/material';
+import { Link as ScrollLink } from 'react-scroll';
+import { AppBar, Toolbar, Typography, Grid, IconButton } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4'; // Moon icon
 import Brightness7Icon from '@mui/icons-material/Brightness7'; // Sun icon
 
 const Navbar = ({ toggleTheme, themeMode }) => {
+    const linkStyle = {
+        color: '#fff', // Link text color
+        marginRight: '20px',
+        cursor: 'pointer',
+    };
+
+    const scrollToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+        }
+    };
+
+
     return (
-        <AppBar position="static">
-            <Toolbar>
+        <AppBar position="fixed" style={{  zIndex: 1000 }}>
+            <Toolbar style={{ minHeight: '64px' }}>
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item>
                         <Typography variant="h4">
@@ -14,24 +29,33 @@ const Navbar = ({ toggleTheme, themeMode }) => {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <Link href="/about" color="inherit" style={{ marginRight: '20px' }}>
+                        <ScrollLink to="about" spy={true} smooth={true} offset={0} duration={500}>
+                          <span style={linkStyle} onClick={() => scrollToSection('about')}>
                             About
-                        </Link>
-                        <Link href="/work" color="inherit" style={{ marginRight: '20px' }}>
+                          </span>
+                        </ScrollLink>
+                        <ScrollLink to="work" spy={true} smooth={true} offset={0} duration={500}>
+                          <span style={linkStyle} onClick={() => scrollToSection('work')}>
                             Work
-                        </Link>
-                        <Link href="/projects" color="inherit" style={{ marginRight: '20px' }}>
+                          </span>
+                        </ScrollLink>
+                        <ScrollLink to="projects" spy={true} smooth={true} offset={0} duration={500}>
+                          <span style={linkStyle} onClick={() => scrollToSection('projects')}>
                             Projects
-                        </Link>
-                        <Link href="/contact" color="inherit" style={{ marginRight: '20px' }}>
+                          </span>
+                        </ScrollLink>
+                        <ScrollLink to="contact" spy={true} smooth={true} offset={0} duration={500}>
+                          <span style={linkStyle} onClick={() => scrollToSection('contact')}>
                             Contact
-                        </Link>
+                          </span>
+                        </ScrollLink>
                         <IconButton onClick={toggleTheme} color="inherit">
                             {themeMode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
                         </IconButton>
                     </Grid>
                 </Grid>
             </Toolbar>
+
         </AppBar>
     );
 }
