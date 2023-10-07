@@ -14,12 +14,12 @@ const Contact = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="body2" gutterBottom>
-                            <strong>Email:</strong> your.email@example.com
+                            <strong>Email:</strong> mrost123@gmail.com
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Typography variant="body2" gutterBottom>
-                            <strong>Phone:</strong> (123) 456-7890
+                            <strong>Phone:</strong> Please don't call me
                         </Typography>
                     </Grid>
                 </Grid>
