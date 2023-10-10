@@ -41,13 +41,13 @@ const Navbar = ({ toggleTheme, themeMode }) => {
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item>
                         <Typography variant="h4">
-                            MR
+                            Matthew Rost
                         </Typography>
                     </Grid>
                     <Grid item>
                         <ScrollLink to="work" spy={true} smooth={true} offset={0} duration={500}>
                           <span style={linkStyle} onClick={() => scrollToSection('work')}>
-                            Work
+                            Education and Experience
                           </span>
                         </ScrollLink>
                         <ScrollLink to="projects" spy={true} smooth={true} offset={0} duration={500}>

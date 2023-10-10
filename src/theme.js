@@ -4,10 +4,14 @@ export const lightTheme = createTheme({
     palette: {
         type: 'light', // Use a light theme
         primary: {
-            main: '#2196F3', // Change primary color
+            main: '#1f3691', // Change primary color
         },
         secondary: {
             main: '#FF5722', // Change secondary color
+        },
+        background: {
+            default: 'rgba(248,242,218,0.68)', // Off-black background color
+            paper: '#f2fffd', // You can also adjust paper color if needed
         },
     },
     // Customize other theme properties as needed

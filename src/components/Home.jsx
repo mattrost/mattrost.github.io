@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 
 import Header from './Header';
 import About from './About';
-import Work from './Work';
+import Experiences from './Experiences';
 import Projects from './Projects';
 import Contact from './Contact';
 
@@ -23,7 +23,7 @@ const Home = () => {
                 <Header />
             </Box>
             <Box id="work" sx={sectionStyle}>
-                <Work />
+                <Experiences />
             </Box>
             <Box id="projects" sx={sectionStyle}>
                 <Projects />

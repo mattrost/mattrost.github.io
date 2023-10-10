@@ -1,0 +1,115 @@
+import React from 'react';
+import { Container, Typography, Paper, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+const Experiences = () => {
+    const experiences = [
+        {
+            type: 'work',
+            title: 'Software Engineer',
+            institution: 'Losant IoT',
+            date: 'October 2022 - Present',
+            description: 'I collaborated directly with enterprise clients to develop IoT solutions spanning from device connectivity to data visualization. Solutions were built in React using JavaScript/TypeScript, depending on the project. My work here was full-stack, ranging from building RESTful APIs in the Losant Visual Workflow Engine, storing data in a non-relational database (MongoDB), all the way to building Stimulus controllers to customize front-end functionality.' +
+                '<br />' +
+                'Other duties included providing technical assistance for sales and partner opportunities, contributing to the growth of the Losant Platform, as well as creating mockups of the UI for our solutions.' +
+                '<br />' +
+                'This was a great experience as I was able to work in a fast-paced software development lifecycle, utilizing Jira for task management. During our sprints, I was expected to implement and enforce coding standards, perform code reviews, and test others\' completed items.'
+        },
+        {
+            type: 'work',
+            title: 'Undergraduate Tech Student',
+            institution: 'Pacific Northwest National Laboratory',
+            date: 'August 2021 - September 2022',
+            description: 'This was a really cool job! My duties at the lab consisted of assisting with battery research. I developed Python scripts with other scientists to automate the creation of graphs and tables using Matplotlib and Numpy. I was also exposed to Arduino, where I created a program to maintain a specified pressure applied to a sensor as a battery\'s dimensions changed during charge and discharge.\n' +
+                '<br />' +
+                'I honed my graphic design skills by creating 2D and 3D illustrations for publications and presentations. This work was done using Adobe Illustrator, Adobe Dimension, and Blender. I cherished the opportunity to tap into my creative side while producing scientific imagery.\n' +
+                '<br />' +
+                'Part of my responsibilities included assembling and testing coin cell batteries. My goal was to experiment with new approaches in advanced battery material research and development. One of my significant challenges was mastering dexterity in a glove box. Some days, this task allowed me to enter a zen-like state, similar to the feeling I experience when I\'m in the zone developing software.',
+        },
+        {
+            type: 'work',
+            title: 'Corrosion and Materials Engineer',
+            institution: 'Marathon Petroleum Corporation',
+            date: 'July 2015 - January 2021',
+            description: 'Description of your responsibilities and achievements at Company 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            type: 'work',
+            title: 'Corrosion and Materials Engineer Co-op',
+            institution: 'Marathon Petroleum Corporation',
+            date: 'January 2013 - May 2013 | August 2013 - December 2013 | May 2014 - August 2014',
+            description: 'Description of your responsibilities and achievements at Company 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        },
+        {
+            type: 'school',
+            title: 'BS Computer Science',
+            institution: 'Oregon State University',
+            date: 'September 2020 - December 2022',
+            description: 'Description of your coursework and achievements. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            gpa: '3.98',
+        },
+        {
+            type: 'school',
+            title: 'BS Materials Science and Engineering',
+            institution: 'Virginia Tech',
+            date: 'August 2010 - May 2015',
+            description: 'Description of your coursework and achievements. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            gpa: '3.20',
+        },
+    ];
+
+    return (
+        <Container>
+            <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
+                <Typography variant="h4" gutterBottom>
+                    Education and Experience
+                </Typography>
+                {experiences.map((experience, index) => (
+                    <Accordion key={index}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls={`panel-${index}-content`}
+                            id={`panel-${index}-header`}
+                        >
+                            {experience.type === 'work' ? (
+                                <WorkIcon />
+                            ) : (
+                                <SchoolIcon />
+                            )}
+                            <Typography variant="h6" style={{ marginLeft: '8px' }}>
+                                {experience.title}, {experience.institution}
+                            </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails className={AccordionDetails}>
+                            <Typography variant="subtitle1" style={{ textAlign: 'left' }}>
+                                {experience.date}
+                            </Typography>
+                            {experience.type === 'school' ? (
+                                <Typography variant="subtitle1" style={{ textAlign: 'left' }}>
+                                    GPA: {experience.gpa}
+                                </Typography>
+                            ) : (
+                                <Typography variant="subtitle1" style={{ textAlign: 'left' }}>
+                                </Typography>
+                            )}
+                            {experience.description.split('<br />').map((paragraph, idx) => (
+                                <React.Fragment key={idx}>
+                                    <Typography variant="body2" style={{ textAlign: 'left' }}>
+                                        {paragraph}
+                                    </Typography>
+                                    {idx < experience.description.split('<br />').length - 1 && (
+                                        <br /> // Add extra space between paragraphs
+                                    )}
+                                </React.Fragment>
+                            ))}
+                        </AccordionDetails>
+                    </Accordion>
+                ))}
+            </Paper>
+        </Container>
+    );
+}
+
+export default Experiences;
