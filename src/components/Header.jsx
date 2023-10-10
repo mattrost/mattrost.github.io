@@ -3,17 +3,20 @@ import { Box, Typography } from '@mui/material';
 
 const Header = () => {
     const headerStyle = {
-        textAlign: 'center',
         padding: '20px',
+        minHeight: '100vh',
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center"
     };
 
     return (
         <Box sx={headerStyle}>
             <Typography variant="h1" gutterBottom>
-                Hi!
+                Hi! I am Matt.
             </Typography>
-            <Typography variant="h3">
-                I am a Software Engineer
+            <Typography variant="h4">
+                I am a Software Engineer at Losant IoT. I work on the Solutions Team, developing Full-Stack Applications for our clients.
             </Typography>
         </Box>
     );

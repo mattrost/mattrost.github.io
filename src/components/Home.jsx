@@ -19,18 +19,17 @@ const Home = () => {
 
     return (
         <>
-            <Box sx={sectionStyle}>
+            <Box>
                 <Header />
-            </Box>
-
-            <Box id="about" sx={sectionStyle}>
-                <About />
             </Box>
             <Box id="work" sx={sectionStyle}>
                 <Work />
             </Box>
             <Box id="projects" sx={sectionStyle}>
                 <Projects />
+            </Box>
+            <Box id="about" sx={sectionStyle}>
+                <About />
             </Box>
             <Box id="contact" sx={sectionStyle}>
                 <Contact />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { AppBar, Toolbar, Typography, Grid, IconButton } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4'; // Moon icon
@@ -18,9 +18,24 @@ const Navbar = ({ toggleTheme, themeMode }) => {
         }
     };
 
+    const [isNavbarVisible, setNavbarVisibility] = useState(true);
+
+    useEffect(() => {
+        const handleResize = () => {
+            const viewportHeight = window.innerHeight;
+            const isMobile = viewportHeight <= 480; // Adjust as needed
+            setNavbarVisibility(!isMobile);
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
-        <AppBar position="fixed" style={{  zIndex: 1000 }}>
+        <AppBar position="fixed" style={{  zIndex: 1000, display: isNavbarVisible ? 'block' : 'none' }}>
             <Toolbar style={{ minHeight: '64px' }}>
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item>
@@ -29,11 +44,6 @@ const Navbar = ({ toggleTheme, themeMode }) => {
                         </Typography>
                     </Grid>
                     <Grid item>
-                        <ScrollLink to="about" spy={true} smooth={true} offset={0} duration={500}>
-                          <span style={linkStyle} onClick={() => scrollToSection('about')}>
-                            About
-                          </span>
-                        </ScrollLink>
                         <ScrollLink to="work" spy={true} smooth={true} offset={0} duration={500}>
                           <span style={linkStyle} onClick={() => scrollToSection('work')}>
                             Work
@@ -42,6 +52,11 @@ const Navbar = ({ toggleTheme, themeMode }) => {
                         <ScrollLink to="projects" spy={true} smooth={true} offset={0} duration={500}>
                           <span style={linkStyle} onClick={() => scrollToSection('projects')}>
                             Projects
+                          </span>
+                        </ScrollLink>
+                        <ScrollLink to="about" spy={true} smooth={true} offset={0} duration={500}>
+                          <span style={linkStyle} onClick={() => scrollToSection('about')}>
+                            About
                           </span>
                         </ScrollLink>
                         <ScrollLink to="contact" spy={true} smooth={true} offset={0} duration={500}>
