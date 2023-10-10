@@ -51,7 +51,7 @@ const Experiences = () => {
             title: 'BS Computer Science',
             institution: 'Oregon State University',
             date: 'September 2020 - December 2022',
-            description: 'I decided to change careers from Materials Engineering to Software Engineering! Oregon State helped me achieve this goal. I took the following electives on top of my required curriculum: Parallel Programming, Open Source Software Development, and Mobile Software Development.\n' +
+            description: 'I decided to change careers from Materials Engineering to Software Engineering! My goal was to get into a career where I could use more creativity. This program helped me achieve that goal. I took the following electives on top of the required curriculum: Parallel Programming, Open Source Software Development, and Mobile Software Development.\n' +
                 '<br />' +
                 'My capstone project was a full-stack web application for players of the TTRPG “Dungeon World” to create and manage their in game characters.',
             gpa: '3.98',
