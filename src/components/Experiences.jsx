@@ -24,7 +24,7 @@ const Experiences = () => {
             date: 'August 2021 - September 2022',
             description: 'This was a really cool job! My duties at the lab consisted of assisting with battery research. I developed Python scripts with other scientists to automate the creation of graphs and tables using Matplotlib and Numpy. I was also exposed to Arduino, where I created a program to maintain a specified pressure applied to a sensor as a battery\'s dimensions changed during charge and discharge.\n' +
                 '<br />' +
-                'I honed my graphic design skills by creating 2D and 3D illustrations for publications and presentations. This work was done using Adobe Illustrator, Adobe Dimension, and Blender. I cherished the opportunity to tap into my creative side while producing scientific imagery.\n' +
+                'I honed my graphic design skills by creating 2D and 3D illustrations for publications and presentations. This work was done using Adobe Illustrator, Adobe Dimension, and Blender. I appreciated the opportunity to tap into my creative side while producing scientific imagery.\n' +
                 '<br />' +
                 'Part of my responsibilities included assembling and testing coin cell batteries. My goal was to experiment with new approaches in advanced battery material research and development. One of my significant challenges was mastering dexterity in a glove box. Some days, this task allowed me to enter a zen-like state, similar to the feeling I experience when I\'m in the zone developing software.',
         },
@@ -33,21 +33,25 @@ const Experiences = () => {
             title: 'Corrosion and Materials Engineer',
             institution: 'Marathon Petroleum Corporation',
             date: 'July 2015 - January 2021',
-            description: 'Description of your responsibilities and achievements at Company 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: 'With my duties in the Inspection Department, I created SQL queries for maintenance and reliability initiatives. This was very helpful to expedite data gathering. I also conducted a pilot project at a refinery to prototype a solution for increasing maintenance efficiency during plant shutdowns. The program was a web application that was used to document turnaround work. Prior to this being used, employees would have to walk to a trailer and look at a chart on a wall. This allowed for better communication during shutdowns, and fewer phone calls.' +
+                '<br />' +
+                'I led Integrity Operating Window and Risk Based Inspection projects at the refinery level. I formed and supervised cross-functional teams to assess multiple refinery units for these projects. I also represented the inspection department by performing failure investigations and root cause analyses. This was a very important part of my job where I felt like I could make the most positive impact. I also received training and industry certifications relating to inspection and maintenance of pressure containing equipment.' +
+                '<br />' +
+                'I mentored five co-op and intern employees to facilitate professional development. I was able to strengthen my knowledge by explaining topics to these employees. I conducted peer review meetings to ensure these employees were comfortable with their work, the workplace, and their developing skills. I also worked with a lot of great people throughout my time at Marathon. I am thankful and appreciative of all of them.',
         },
         {
             type: 'work',
             title: 'Corrosion and Materials Engineer Co-op',
             institution: 'Marathon Petroleum Corporation',
             date: 'January 2013 - May 2013 | August 2013 - December 2013 | May 2014 - August 2014',
-            description: 'Description of your responsibilities and achievements at Company 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: 'I spent three school terms co-oping with Marathon. I worked with the inspection department, where I was tasked with small projects. A lot of this work helped me prepare for my full time position that started in 2015. I was able to overcome my fear of heights throughout these co-op terms. While I no longer become petrified when elevated, I am still wary of the dangers associated with falling.',
         },
         {
             type: 'school',
             title: 'BS Computer Science',
             institution: 'Oregon State University',
             date: 'September 2020 - December 2022',
-            description: 'Description of your coursework and achievements. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: 'Fun Electives: Open Source Software, Parallel Processing, Mobile Development',
             gpa: '3.98',
         },
         {
