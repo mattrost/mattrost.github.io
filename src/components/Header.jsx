@@ -15,8 +15,9 @@ const Header = () => {
             <Typography variant="h1" gutterBottom>
                 Hi! I am Matt.
             </Typography>
-            <Typography variant="h4">
-                I am a Software Engineer at Losant IoT. I work on the Solutions Team, developing Full-Stack Applications for our clients.
+            <Typography variant="h3" gutterBottom>
+                I am a Software Engineer at Losant IoT. I work on the Solutions Team, developing Full-Stack Applications
+                for our clients.
             </Typography>
         </Box>
     );

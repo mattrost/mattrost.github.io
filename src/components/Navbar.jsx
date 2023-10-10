@@ -23,7 +23,8 @@ const Navbar = ({ toggleTheme, themeMode }) => {
     useEffect(() => {
         const handleResize = () => {
             const viewportHeight = window.innerHeight;
-            const isMobile = viewportHeight <= 480; // Adjust as needed
+            const viewportWidth = window.innerWidth;
+            const isMobile = viewportHeight <= 736 || viewportWidth <= 736;
             setNavbarVisibility(!isMobile);
         };
 
@@ -40,7 +41,7 @@ const Navbar = ({ toggleTheme, themeMode }) => {
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item>
                         <Typography variant="h4">
-                            Matthew Rost
+                            MR
                         </Typography>
                     </Grid>
                     <Grid item>
