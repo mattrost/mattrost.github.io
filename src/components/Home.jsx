@@ -1,27 +1,41 @@
 import React from 'react';
+import { Box } from '@mui/material';
 
+import Header from './Header';
 import About from './About';
 import Work from './Work';
 import Projects from './Projects';
 import Contact from './Contact';
 
 const Home = () => {
+    const sectionStyle = {
+        minHeight: '100vh',
+        paddingTop: '64px',
+    };
+
+    const paddingBottomStyle = {
+        paddingBottom: '100px',
+    };
+
     return (
         <>
-            <div id ='about' style={{minHeight: '100vh', paddingTop: '64px'}}>
-                <About />
-            </div>
-            <div id ='work' style={{minHeight: '100vh', paddingTop: '64px'}}>
-                <Work />
-            </div>
-            <div id ='projects' style={{minHeight: '100vh', paddingTop: '64px'}}>
-                <Projects />
-            </div>
-            <div id ='contact' style={{minHeight: '100vh', paddingTop: '64px'}}>
-                <Contact />
-            </div>
+            <Box sx={sectionStyle}>
+                <Header />
+            </Box>
 
-            <div style={{ paddingBottom: '100px' }}></div>
+            <Box id="about" sx={sectionStyle}>
+                <About />
+            </Box>
+            <Box id="work" sx={sectionStyle}>
+                <Work />
+            </Box>
+            <Box id="projects" sx={sectionStyle}>
+                <Projects />
+            </Box>
+            <Box id="contact" sx={sectionStyle}>
+                <Contact />
+            </Box>
+            <Box sx={paddingBottomStyle}></Box>
         </>
     );
 };
