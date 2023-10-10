@@ -51,7 +51,9 @@ const Experiences = () => {
             title: 'BS Computer Science',
             institution: 'Oregon State University',
             date: 'September 2020 - December 2022',
-            description: 'Fun Electives: Open Source Software, Parallel Processing, Mobile Development',
+            description: 'I decided to change careers from Materials Engineering to Software Engineering! Oregon State helped me achieve this goal. I took the following electives on top of my required curriculum: Parallel Programming, Open Source Software Development, and Mobile Software Development.\n' +
+                '<br />' +
+                'My capstone project was a full-stack web application for players of the TTRPG “Dungeon World” to create and manage their in game characters.',
             gpa: '3.98',
         },
         {
@@ -59,7 +61,11 @@ const Experiences = () => {
             title: 'BS Materials Science and Engineering',
             institution: 'Virginia Tech',
             date: 'August 2010 - May 2015',
-            description: 'Description of your coursework and achievements. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            description: 'My studies at Virginia Tech helped shape the person I am today. The curriculum in this program was rigorous, which helped me develop a strong work ethic. Most importantly, I was able to build lifelong connections with others during my studies. Virginia Tech\'s Engineering programs are known for their collaborative nature rather than competitiveness. I took a wide variety of electives, but my primary interest was in the degradation of materials.\n' +
+                '<br />' +
+                'The focus of my capstone project was to identify the effect of a potassium permanganate cleaning method on fracture surfaces. Fractured samples were prepared to simulate jet turbine fractures. This work was conducted for the National Transportation Safety Board.\n' +
+                '<br />' +
+                'I participated in the Galileo Engineering Learning Community, Materials Engineering Professional Society, Society of Hispanic Professional Engineers, as well as various intramural sports teams.',
             gpa: '3.20',
         },
     ];
