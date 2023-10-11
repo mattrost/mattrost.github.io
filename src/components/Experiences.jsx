@@ -72,10 +72,10 @@ const Experiences = () => {
 
     return (
         <Container>
+            <Typography variant="h4" gutterBottom>
+                Education and Experience
+            </Typography>
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
-                <Typography variant="h4" gutterBottom>
-                    Education and Experience
-                </Typography>
                 {experiences.map((experience, index) => (
                     <Accordion key={index}>
                         <AccordionSummary
@@ -92,7 +92,7 @@ const Experiences = () => {
                                 {experience.title}, {experience.institution}
                             </Typography>
                         </AccordionSummary>
-                        <AccordionDetails className={AccordionDetails}>
+                        <AccordionDetails>
                             <Typography variant="subtitle1" style={{ textAlign: 'left' }}>
                                 {experience.date}
                             </Typography>
