@@ -1,25 +1,49 @@
 import React from 'react';
-import { Container, Typography, Grid, Paper } from '@mui/material';
+import { Container, Typography, Grid, Paper, Link } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = () => {
+
+    const githubUrl = 'https://github.com/mattrost';
+    const linkedinUrl = 'https://www.linkedin.com/in/matthew-r123';
+    const email = 'mailto:mrost123@gmail.com';
+
     return (
         <Container>
+            <Typography variant="h3" gutterBottom>
+                Contact Me
+            </Typography>
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
-                <Typography variant="h4" gutterBottom>
-                    Contact Me
+                <Typography variant="h5" paragraph>
+                    If you'd like to get in touch or collaborate, you can reach me through the following:
                 </Typography>
-                <Typography variant="body1" paragraph>
-                    If you'd like to get in touch, you can reach me through the following methods:
-                </Typography>
-                <Grid container spacing={2}>
-                    <Grid item xs={12} sm={6}>
-                        <Typography variant="body2" gutterBottom>
-                            <strong>Email:</strong> mrost123@gmail.com
+                <Grid container spacing={3}>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="h5" gutterBottom>
+                            <strong>Email:</strong>{' '}
+                            <Link href={email} target="_blank" rel="noopener noreferrer">
+                                <EmailIcon />
+                            </Link>
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <Typography variant="body2" gutterBottom>
-                            <strong>Phone:</strong> Please don't call me
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="h5" gutterBottom>
+                            <strong>LinkedIn:</strong>{' '}
+                            <Link href={linkedinUrl} target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon />
+                            </Link>
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Typography variant="h5" gutterBottom>
+                            <Typography variant="h5" gutterBottom>
+                                <strong>GitHub:</strong>{' '}
+                                <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
+                                    <GitHubIcon />
+                                </Link>
+                            </Typography>
                         </Typography>
                     </Grid>
                 </Grid>

@@ -72,7 +72,7 @@ const Experiences = () => {
 
     return (
         <Container>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h3" gutterBottom>
                 Education and Experience
             </Typography>
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>

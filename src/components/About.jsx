@@ -4,42 +4,25 @@ import { Container, Typography, Paper } from '@mui/material';
 const About = () => {
     return (
         <Container>
+            <Typography variant="h3" gutterBottom>
+                About Me
+            </Typography>
             <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
-                <Typography variant="h4" gutterBottom>
-                    About Me
+                <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
+                    Hi! I'm Matt Rost, a Software Engineer and former Materials Engineer based in Cincinnati, OH. After becoming increasingly stressed out from working in oil refineries, I decided to take the plunge into Software Engineering in 2020. I chose to make this big change so I could work with something that I was more passionate about! I attended Oregon State University’s Computer Science program.
                 </Typography>
-                <Typography variant="body1" paragraph>
-                    Hello, I'm Matthew Rost, a Software Engineer based in Cincinnati, OH. I have dedicated myself to the ever-evolving world
-                    of software development. Currently, I am fortunate to be a part of the dynamic team at Losant, where
-                    I contribute my skills and expertise to create innovative software solutions. As someone deeply
-                    immersed in the realm of technology, I constantly strive to learn and grow in my field, always eager
-                    to take on new challenges and explore the endless possibilities that software engineering offers.
-                    Join me on this journey as we delve deeper into the fascinating world of coding and innovation.
+                <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
+                    I am currently part of the team at Losant IoT, where I contribute to software solutions for our clients. My work here is as a full-stack engineer. I work mostly with React, StimulusJS, Turbo Frames, JavaScript, TypeScript, and Python. I am very enthusiastic about learning and am fortunate that every day leads to new opportunities.
                 </Typography>
-                <Typography variant="body1" paragraph>
-                    In addition to my professional journey, I hold a diverse educational background that has greatly
-                    enriched my perspective as a Software Engineer. I earned my Bachelor of Science in Materials Science
-                    and Engineering from Virginia Tech in 2015, where I honed my analytical and problem-solving skills
-                    in a field that combines science and engineering to create cutting-edge materials and technologies.
+                <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
+                    I am interested in FOSS and would love to contribute to more projects! Let me know if there is something cool you would like to collaborate on. There are not any languages or tech stacks that I am afraid of conquering!
                 </Typography>
-                <Typography variant="body1" paragraph>
-                    Building on this foundation, I further expanded my knowledge by pursuing another Bachelor of
-                    Science, this time in Computer Science, at Oregon State University. In 2022, I successfully
-                    completed my computer science degree, equipping myself with a robust set of programming skills and a
-                    deep understanding of the principles that underpin the digital world we live in.
+                <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
+                    Some of my hobbies include playing guitar, making music, playing video games, table-top role playing games, rock climbing, hiking, spinning classes, photography, and brewing coffee. One of my fondest memories is trying out a new guitar at my local store while Peter Frampton was shopping. My favorite video games are Baldur's Gate, Escape Velocity: Override, and Jet Grind Radio.
                 </Typography>
-                <Typography variant="body1" paragraph>
-                    I am passionate about [Your Interests/Hobbies] and love [What You Love Doing].
+                <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
+                    I am very lucky to work in a field that allows me to make things!
                 </Typography>
-                <Typography variant="body1" paragraph>
-                    Here are some of my skills and expertise:
-                </Typography>
-                <ul>
-                    <li>React</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    {/* Add more skills */}
-                </ul>
             </Paper>
         </Container>
     );

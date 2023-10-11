@@ -10,11 +10,7 @@ import Contact from './Contact';
 const Home = () => {
     const sectionStyle = {
         minHeight: '100vh',
-        paddingTop: '64px',
-    };
-
-    const paddingBottomStyle = {
-        paddingBottom: '100px',
+        paddingTop: '100px',
     };
 
     return (
@@ -34,7 +30,6 @@ const Home = () => {
             <Box id="contact" sx={sectionStyle}>
                 <Contact />
             </Box>
-            <Box sx={paddingBottomStyle}></Box>
         </>
     );
 };
