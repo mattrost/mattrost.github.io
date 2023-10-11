@@ -7,7 +7,7 @@ const Project = ({ title, stack, date, description, repository }) => {
             <Typography variant="h5" gutterBottom>
                 {title}
             </Typography>
-            <Typography variant="body2" color="textSecondary" gutterBottom>
+            <Typography variant="body2" gutterBottom>
                 {stack} | {date}
             </Typography>
             <List>
