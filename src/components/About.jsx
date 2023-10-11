@@ -12,7 +12,7 @@ const About = () => {
                     Hi! I'm Matt Rost, a Software Engineer and former Materials Engineer based in Cincinnati, OH. After becoming increasingly stressed out from working in oil refineries, I decided to take the plunge into Software Engineering in 2020. I chose to make this big change so I could work with something that I was more passionate about! I attended Oregon State University’s Computer Science program.
                 </Typography>
                 <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
-                    I am currently part of the team at Losant IoT, where I contribute to software solutions for our clients. My work here is as a full-stack engineer. I work mostly with React, StimulusJS, Turbo Frames, JavaScript, TypeScript, and Python. I am very enthusiastic about learning and am fortunate that every day leads to new opportunities.
+                    I am currently part of the team at Losant IoT, where I contribute to software solutions for our clients as a full-stack engineer. I work mostly with React, StimulusJS, Turbo Frames, JavaScript, TypeScript, and Python. I am very enthusiastic about learning and am fortunate that every day leads to new opportunities.
                 </Typography>
                 <Typography variant="h6" paragraph style={{ textAlign: 'left' }}>
                     I am interested in FOSS and would love to contribute to more projects! Let me know if there is something cool you would like to collaborate on. There are not any languages or tech stacks that I am afraid of conquering!
