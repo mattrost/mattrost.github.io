@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Typography, Paper, List, ListItem, ListItemText } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const Project = ({ title, stack, date, description, repository }) => {
+    const theme = useTheme();
+
     return (
         <Paper elevation={3} style={{ padding: '20px', marginTop: '20px' }}>
             <Typography variant="h5" gutterBottom>
@@ -19,7 +22,20 @@ const Project = ({ title, stack, date, description, repository }) => {
             </List>
             {repository && (
                 <Typography variant="body2">
-                    Repository: <a href={repository} target="_blank" rel="noopener noreferrer">{repository}</a>
+                    Repository:{' '}
+                    <a
+                        href={repository}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            color: theme.palette.custom?.linkColor || theme.palette.primary.main,
+                            textDecoration: 'underline',
+                        }}
+                        onMouseOver={e => (e.target.style.color = '#bb86fc')}  // Optional hover color
+                        onMouseOut={e => (e.target.style.color = theme.palette.custom?.linkColor || theme.palette.primary.main)}
+                    >
+                        {repository}
+                    </a>
                 </Typography>
             )}
         </Paper>

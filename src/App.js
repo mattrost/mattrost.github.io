@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-import { CssBaseline } from "@mui/material";
-import { ThemeProvider } from '@mui/material/styles'; // Import ThemeProvider
-import { darkTheme, lightTheme } from './theme'; // Import your custom dark theme
+import { CssBaseline, Box } from "@mui/material";
+import { ThemeProvider } from '@mui/material/styles';
+import { darkTheme, lightTheme } from './theme';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -12,7 +12,6 @@ function App() {
     const [themeMode, setThemeMode] = useState(storedThemeMode);
 
     useEffect(() => {
-        // Store the selected theme mode in local storage
         localStorage.setItem('themeMode', themeMode);
     }, [themeMode]);
 
@@ -20,15 +19,23 @@ function App() {
         setThemeMode((prevMode) => (prevMode === 'dark' ? 'light' : 'dark'));
     };
 
+    const activeTheme = themeMode === 'dark' ? darkTheme : lightTheme;
+
     return (
-      <ThemeProvider theme={themeMode === 'dark' ? darkTheme : lightTheme}>
-          <CssBaseline />
-          <div className="App">
-              <Navbar toggleTheme={toggleTheme} themeMode={themeMode}/>
-              <Home />
-          </div>
-      </ThemeProvider>
-  );
+        <ThemeProvider theme={activeTheme}>
+            <CssBaseline />
+            <Box
+                sx={{
+                    minHeight: '100vh',
+                    background: activeTheme.palette.custom?.gradientBackground || activeTheme.palette.background.default,
+                    color: activeTheme.palette.text.primary,
+                }}
+            >
+                <Navbar toggleTheme={toggleTheme} themeMode={themeMode} />
+                <Home />
+            </Box>
+        </ThemeProvider>
+    );
 }
 
 export default App;
