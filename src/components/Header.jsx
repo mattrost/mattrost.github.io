@@ -12,10 +12,10 @@ const Header = () => {
 
     return (
         <Box sx={headerStyle}>
-            <Typography variant="h1" gutterBottom>
+            <Typography variant="h2" gutterBottom>
                 Hi! I am Matt.
             </Typography>
-            <Typography variant="h3" gutterBottom>
+            <Typography variant="h4" gutterBottom>
                 I am a Software Engineer at Losant IoT. I work on the Solutions Team, developing Full-Stack Applications
                 for our clients.
             </Typography>

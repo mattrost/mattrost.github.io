@@ -35,7 +35,6 @@ const Projects = () => {
             description: [
                 'Collaborated with senior capstone team to create a web application using agile project management. Implemented front end API requests, created dice roller functionality, created a rules and resources page, as well as authentication with Auth0.',
             ],
-            repository: 'https://github.com/chapinel/ttrpg-character-app',
         },
         {
             title: 'Bevy Game Development Tutorial',
