@@ -11,9 +11,11 @@ const Experiences = () => {
             title: 'Software Engineer',
             institution: 'Losant IoT',
             date: 'October 2022 - Present',
-            description: 'I collaborated directly with enterprise clients to develop IoT solutions spanning from device connectivity to data visualization. Solutions were built in React using JavaScript/TypeScript, depending on the project. My work here was full-stack, ranging from building RESTful APIs in the Losant Visual Workflow Engine, storing data in a non-relational database (MongoDB), all the way to building Stimulus controllers to customize front-end functionality.' +
+            description: 'I collaborated directly with enterprise clients to develop IoT solutions spanning from device connectivity and real-time data ingestion to fron-end data visualization. These solutions were built using JavaScript/TypeScript, React, and occasionally Swift/SwiftUI depending on the project. On the back end, I developed secure, scalable RESTful APIs and services using the Losant Visual Workflow Engine, integrating with MongoDB for non-relational data storage.' +
                 '<br />' +
-                'Other duties included providing technical assistance for sales and partner opportunities, contributing to the growth of the Losant Platform, as well as creating mockups of the UI for our solutions.' +
+                'I also created dynamic UI components using Stimulus.js to extend Losant’s templating system, enabling configurable dashboards tailored to client needs. When required, I performed data analysis in Python (Pandas, NumPy) to derive insights from exported telemetry datasets, supporting both internal diagnostics and client-facing reporting.' +
+                '<br />' +
+                'Beyond engineering, I collaborated with product managers, stakeholders, and the sales team to define requirements, scope features, and deliver production-ready solutions on tight sprint timelines. I also contributed to platform-wide improvements, led efforts in authentication and authorization (token-based access control, role management, third-party identity providers), and promoted testing best practices through unit/integration tests with Jest and team-wide TDD adoption.' +
                 '<br />' +
                 'This was a great experience as I was able to work in a fast-paced software development lifecycle, utilizing Jira for task management. During our sprints, I was expected to implement and enforce coding standards, perform code reviews, and test others\' completed items.'
         },

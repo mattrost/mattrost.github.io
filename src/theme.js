@@ -2,37 +2,29 @@ import { createTheme } from '@mui/material/styles';
 
 export const lightTheme = createTheme({
     palette: {
-        type: 'light', // Use a light theme
-        primary: {
-            main: '#484b6a', // Change primary color
-        },
-        secondary: {
-            main: '#484b6a', // Change secondary color
-        },
+        mode: 'light',
+        primary: { main: '#484b6a' },
+        secondary: { main: '#484b6a' },
         background: {
-            default: '#fafafa', // Off-black background color
-            paper: '#e4e5f1', // You can also adjust paper color if needed
+            default: '#f5f5f5',
+            paper: '#e4e5f1',
+        },
+        custom: {
+            gradientBackground: 'linear-gradient(135deg, #f0f4ff 0%, #a1a9ff 40%, #7179e0 75%, #484b6a 100%)',
         },
     },
-    // Customize other theme properties as needed
 });
 
 export const darkTheme = createTheme({
     palette: {
-        type: 'dark', // Use a dark theme
-        primary: {
-            main: '#000000', // Change primary color
-        },
-        secondary: {
-            main: '#fafafa', // Change secondary color
-        },
-        background: {
-            default: '#161618', // Off-black background color
-            paper: '#212124', // You can also adjust paper color if needed
-        },
-        text: {
-            primary: '#fff', // White text color
+        mode: 'dark',
+        primary: { main: '#ffffff' },
+        secondary: { main: '#90caf9' },
+        background: { default: '#121212', paper: '#1e1e1e' },
+        text: { primary: '#ffffff', secondary: '#ccc' },
+        custom: {
+            gradientBackground: 'linear-gradient(135deg, #0d0d0d 0%, #121212 40%, #1a237e 80%, #000000 100%)',
+            linkColor: '#90caf9',
         },
     },
-    // Customize other theme properties as needed
 });
