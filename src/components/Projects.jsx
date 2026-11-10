@@ -49,7 +49,7 @@ const Projects = () => {
             stack: 'Next.js/React/TypeScript/MySQL',
             date: 'November 2022',
             description: [
-                'Collaborated with senior capstone team to create a web application using agile project management. Implemented front end API requests, created dice roller functionality, created a rules and resources page, as well as authentication with Auth0.',
+                'Collaborated with a senior capstone team to develop a full-stack web application for creating and managing Dungeon World characters. I implemented frontend API integrations, authentication using Auth0, a virtual dice roller, and a searchable rules and resources section while working within an agile development process.',
             ],
         },
         {
@@ -57,7 +57,7 @@ const Projects = () => {
             stack: 'Rust',
             date: 'May 2022',
             description: [
-                'Created a video game with the Rust Language and the Bevy game engine crate to demonstrate how to make a simple Asteroids style game with an Entity-Component-System architecture to new Rust and Bevy users. Wrote a tutorial on development of the simple game, using the Bevy engine, as well as the Entity-Component-System architecture using markdown and Rust crate mdBook.',
+                'Created a tutorial game in Rust using the Bevy game engine to demonstrate core game development concepts, including Entity-Component-System (ECS) architecture. I also wrote a companion tutorial using mdBook to help new Rust and Bevy developers learn the engine and its development patterns.',
             ],
             repository: 'https://github.com/mattrost/Asteroids-Clone-Demonstration',
         },
@@ -66,7 +66,7 @@ const Projects = () => {
             stack: 'C',
             date: 'February 2022',
             description: [
-                'Utilized the Unix process API to write a custom shell in C allowing users to run commands with the unistd library. Designed custom commands with code built into the shell and allowed execution of other commands by leveraging the exec family of functions. Implemented custom signal handlers, foreground/background support, and input/output redirection.',
+                'Developed a custom Unix shell in C using the Unix process API and unistd library. The shell supports command execution, built-in commands, foreground and background processes, input/output redirection, and custom signal handling through the exec family of functions.',
             ],
             repository: 'https://github.com/mattrost/Small-Shell',
         },
@@ -75,7 +75,7 @@ const Projects = () => {
             stack: 'React/Node/MongoDB/Express/JavaScript',
             date: 'August 2021',
             description: [
-                'Applied agile methods to plan and develop a full stack web application in the MERN stack. Brainstormed with a development team to pitch product ideas. Created a Flask microservice hosted on Heroku to return a summary of ice cream brands utilizing the Wikipedia API. Incorporated a teammate\'s microservice to dynamically search the Kroger API and find prices of specific ice cream items.',
+                'Collaborated with a development team to build a full-stack MERN application for reviewing and exploring ice cream products. I developed a Flask microservice hosted on Heroku that leveraged the Wikipedia API to generate brand summaries and integrated teammate-developed services to provide dynamic grocery pricing information through the Kroger API.',
             ],
             repository: 'https://github.com/mattrost/ice-cream',
         },
@@ -84,7 +84,7 @@ const Projects = () => {
             stack: 'Python',
             date: 'June 2021',
             description: [
-                'Created a Python program for directed and undirected graph data structures, including Depth/Breadth First Searches and Dijkstra\'s Algorithm. Implemented directed graph with adjacency-matrix, undirected graph with adjacency-list. Employed unit testing to ensure algorithms perform satisfactorily.',
+                'Implemented directed and undirected graph data structures in Python using adjacency matrices and adjacency lists. The project included breadth-first search, depth-first search, Dijkstra’s shortest path algorithm, and unit testing to validate algorithm correctness.',
             ],
             repository: 'https://github.com/mattrost/Graph-Implementation',
         },
@@ -93,7 +93,7 @@ const Projects = () => {
             stack: 'x86 Assembly, MASM',
             date: 'June 2021',
             description: [
-                'Devised a program that includes macros and procedures to take a user string input and convert by individual byte to numeric form to store into an array and convert back by byte to string for output. Calculated average and sum of numbers by using string primitives instead of numbers.',
+                'Developed a program in x86 Assembly and MASM utilizing macros, procedures, and string primitives to convert user input between string and numeric representations. The application performed aggregate calculations while emphasizing low-level memory manipulation and assembly language programming concepts.',
             ],
             repository: 'https://github.com/mattrost/String-Primitives-and-Macros/',
         },

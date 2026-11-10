@@ -8,30 +8,30 @@ import Projects from './Projects';
 import Contact from './Contact';
 
 const Home = () => {
-    const sectionStyle = {
-        minHeight: '100vh',
-        paddingTop: '100px',
-    };
+  const sectionStyle = {
+    minHeight: '100vh',
+    paddingTop: '100px',
+  };
 
-    return (
-        <>
-            <Box>
-                <Header />
-            </Box>
-            <Box id="work" sx={sectionStyle}>
-                <Experiences />
-            </Box>
-            <Box id="projects" sx={sectionStyle}>
-                <Projects />
-            </Box>
-            <Box id="about" sx={sectionStyle}>
-                <About />
-            </Box>
-            <Box id="contact" sx={sectionStyle}>
-                <Contact />
-            </Box>
-        </>
-    );
+  return (
+    <>
+      <Box>
+        <Header />
+      </Box>
+      <Box id="work" sx={sectionStyle}>
+        <Experiences />
+      </Box>
+      <Box id="projects" sx={sectionStyle}>
+        <Projects />
+      </Box>
+      <Box id="about" sx={sectionStyle}>
+        <About />
+      </Box>
+      <Box id="contact" sx={sectionStyle}>
+        <Contact />
+      </Box>
+    </>
+  );
 };
 
 export default Home;
