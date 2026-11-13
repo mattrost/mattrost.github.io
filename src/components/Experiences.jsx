@@ -8,7 +8,7 @@ const Experiences = () => {
   const experiences = [
     {
       type: 'work',
-      title: 'Software Engineer',
+      title: 'Senior Software Engineer',
       institution: 'SUSE',
       date: 'March 2026 - November 2026',
       description: [
