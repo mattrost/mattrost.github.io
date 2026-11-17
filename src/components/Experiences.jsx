@@ -25,7 +25,7 @@ const Experiences = () => {
       description: [
         'I collaborated directly with enterprise clients to develop IoT solutions spanning device connectivity, real-time data ingestion, RESTful APIs, and front-end data visualization. These solutions were built using JavaScript/TypeScript, React, Swift/SwiftUI, the Losant Visual Workflow Engine, and MongoDB.',
         'I created dynamic UI components using Stimulus.js to extend Losant’s templating system, enabling configurable dashboards tailored to client requirements. When needed, I leveraged Python, Pandas, and NumPy to analyze telemetry datasets and provide diagnostics, analytics, and operational insights.',
-        'I contributed to platform-wide improvements, including authentication and authorization features such as token-based access control, role management, and third-party identity provider integrations. I also helped promote testing best practices through unit and integration testing with Jest and team-wide TDD adoption.',
+        'I contributed to platform-wide improvements, including authentication and authorization features such as token-based access control and role management. I also helped promote testing best practices through unit and integration testing with Jest and team-wide TDD adoption.',
         'Working within an agile development environment, I collaborated with enterprise clients, product managers, stakeholders, and sales teams to define requirements, scope features, perform code reviews, conduct QA validation, and deliver production-ready solutions.'
       ]
     },
